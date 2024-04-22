@@ -1,0 +1,2 @@
+# Mineral-admin-web
+Mineral项目是一套基于SpringBoot+MyBatis+VUE3实现的C2C微服务电商系统，用于地大珠宝及其他商品的推广和售卖。采用Docker容器化部署，后端支持多模块和微服务架构。可视化前端包括前台商城和后台管理系统。同时综合使用Oauth2、Elasticsearch、Docker、Kubernetes等核心技术完成商城业务和项目部署。
