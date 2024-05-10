@@ -46,7 +46,7 @@
         dialogVisible: false,
         dialogImageUrl:null,
         useOss:false, //使用oss->true;使用MinIO->false
-        ossUploadUrl:'https://brayden-oss.oss-cn-beijing.aliyuncs.com',
+        ossUploadUrl:'https://brayden-pic.oss-cn-beijing.aliyuncs.com',
         minioUploadUrl:'http://localhost:8201/mall-admin/minio/upload',
       };
     },
