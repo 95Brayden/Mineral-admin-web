@@ -22,7 +22,7 @@
           <div class="out-border">
             <div class="layout-title">点Star支持项目</div>
             <div class="color-main address-content">
-              <a href="https://github.com/macrozheng/mall" target="_blank">mall项目</a>
+              <a href="https://github.com/macrozheng/mall" target="_blank">Minerral云端矿场</a>
             </div>
           </div>
         </el-col>
@@ -63,10 +63,9 @@
     </div>
     <el-card class="mine-layout">
       <div style="text-align: center">
-        <img width="150px" height="150px" src="http://macro-oss.oss-cn-shenzhen.aliyuncs.com/mall/banner/qrcode_for_macrozheng_258.jpg">
+        <img width="150px" height="150px" src="static\logo\img\mineral-logo.png">
       </div>
-      <div style="text-align: center">mall全套学习教程连载中！</div>
-      <div style="text-align: center;margin-top: 5px"><span class="color-main">关注公号</span>，第一时间获取。</div>
+      <div style="text-align: center">Minerral云端矿场</div>
     </el-card>
     <div class="un-handle-layout">
       <div class="layout-title">待处理事务</div>
@@ -252,22 +251,23 @@
   const DATA_FROM_BACKEND = {
     columns: ['date', 'orderCount','orderAmount'],
     rows: [
-      {date: '2018-11-01', orderCount: 10, orderAmount: 1093},
-      {date: '2018-11-02', orderCount: 20, orderAmount: 2230},
-      {date: '2018-11-03', orderCount: 33, orderAmount: 3623},
-      {date: '2018-11-04', orderCount: 50, orderAmount: 6423},
-      {date: '2018-11-05', orderCount: 80, orderAmount: 8492},
-      {date: '2018-11-06', orderCount: 60, orderAmount: 6293},
-      {date: '2018-11-07', orderCount: 20, orderAmount: 2293},
-      {date: '2018-11-08', orderCount: 60, orderAmount: 6293},
-      {date: '2018-11-09', orderCount: 50, orderAmount: 5293},
-      {date: '2018-11-10', orderCount: 30, orderAmount: 3293},
-      {date: '2018-11-11', orderCount: 20, orderAmount: 2293},
-      {date: '2018-11-12', orderCount: 80, orderAmount: 8293},
-      {date: '2018-11-13', orderCount: 100, orderAmount: 10293},
-      {date: '2018-11-14', orderCount: 10, orderAmount: 1293},
-      {date: '2018-11-15', orderCount: 40, orderAmount: 4293}
-    ]
+      {date: '2024-05-01', orderCount: 10, orderAmount: 1093},
+      {date: '2024-05-02', orderCount: 20, orderAmount: 2230},
+      {date: '2024-05-03', orderCount: 33, orderAmount: 3623},
+      {date: '2024-05-04', orderCount: 50, orderAmount: 6423},
+      {date: '2024-05-05', orderCount: 80, orderAmount: 8492},
+      {date: '2024-05-06', orderCount: 60, orderAmount: 6293},
+      {date: '2024-05-07', orderCount: 20, orderAmount: 2293},
+      {date: '2024-05-08', orderCount: 60, orderAmount: 6293},
+      {date: '2024-05-09', orderCount: 50, orderAmount: 5293},
+      {date: '2024-05-10', orderCount: 30, orderAmount: 3293},
+      {date: '2024-05-11', orderCount: 20, orderAmount: 2293},
+      {date: '2024-05-12', orderCount: 80, orderAmount: 8293},
+      {date: '2024-05-13', orderCount: 100, orderAmount: 10293},
+      {date: '2024-05-14', orderCount: 10, orderAmount: 1293},
+      {date: '2024-05-15', orderCount: 40, orderAmount: 4293}
+]
+
   };
   export default {
     name: 'home',
@@ -277,14 +277,14 @@
           shortcuts: [{
             text: '最近一周',
             onClick(picker) {
-              let start = new Date(2018,10,1);
+              let start = new Date(2024,4,1);
               const end = new Date(start.getTime() + 1000 * 60 * 60 * 24 * 7);
               picker.$emit('pick', [start, end]);
             }
           }, {
             text: '最近一月',
             onClick(picker) {
-              let start = new Date(2018,10,1);
+              let start = new Date(2024,4,1);
               const end = new Date(start.getTime() + 1000 * 60 * 60 * 24 * 30);
               picker.$emit('pick', [start, end]);
             }
@@ -316,7 +316,7 @@
         this.getData();
       },
       initOrderCountDate(){
-        let start = new Date(2018,10,1);
+        let start = new Date(2024,4,1);
         const end = new Date(start.getTime() + 1000 * 60 * 60 * 24 * 7);
         this.orderCountDate=[start,end];
       },
