@@ -5,7 +5,7 @@
         <i class="el-icon-search"></i>
         <span>筛选搜索</span>
         <el-button
-          style="float:right"
+          style="float:right;background-color: #a5954f !important; color: #ffffff !important;"
           type="primary"
           @click="handleSearchList()"
           size="small">
