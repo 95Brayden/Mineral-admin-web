@@ -5,12 +5,13 @@
           <i class="el-icon-search"></i>
           <span>筛选搜索</span>
           <el-button
-            style="float: right"
+            style="float: right; background-color: #a5954f !important; color: #ffffff !important;" 
             @click="searchBrandList()"
             type="primary"
             size="small">
             查询结果
           </el-button>
+
         </div>
         <div style="margin-top: 15px">
           <el-form :inline="true" :model="listQuery" size="small" label-width="140px">
