@@ -30,7 +30,9 @@
       margin-right: 16px;
     }
     .el-menu {
-      border: none;
+      //border: none;
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
       width: 100% !important;
     }
   }
@@ -69,14 +71,21 @@
   .sidebar-container .nest-menu .el-submenu>.el-submenu__title,
   .sidebar-container .el-submenu .el-menu-item {
     min-width: 180px !important;
-    background-color: $subMenuBg !important;
+    //background-color: $subMenuBg !important;
+    background-color: #ffe7bb !important;
     &:hover {
-      background-color: $menuHover !important;
+      // background-color: $menuHover !important;
+       background-color: #ffd6d6 !important;
     }
   }
   .el-menu--collapse .el-menu .el-submenu {
     min-width: 180px !important;
   }
+  .el-menu-item {
+    border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  }
+
 
   //适配移动端
   .mobile {
