@@ -5,12 +5,12 @@
         <i class="el-icon-search"></i>
         <span>筛选搜索</span>
         <el-button
-          style="float: right"
-          @click="handleSearchList()"
-          type="primary"
-          size="small">
-          查询结果
-        </el-button>
+            style="float: right; background-color: #a5954f !important; color: #ffffff !important;" 
+            @click="searchBrandList()"
+            type="primary"
+            size="small">
+            查询结果
+          </el-button>
         <el-button
           style="float: right;margin-right: 15px"
           @click="handleResetSearch()"
@@ -109,15 +109,19 @@
                 @change="handlePublishStatusChange(scope.$index, scope.row)"
                 :active-value="1"
                 :inactive-value="0"
-                v-model="scope.row.publishStatus">
+                v-model="scope.row.publishStatus"
+                
+              >
               </el-switch>
             </p>
+
             <p>新品：
               <el-switch
                 @change="handleNewStatusChange(scope.$index, scope.row)"
                 :active-value="1"
                 :inactive-value="0"
-                v-model="scope.row.newStatus">
+                v-model="scope.row.newStatus"
+                >
               </el-switch>
             </p>
             <p>推荐：
@@ -125,7 +129,8 @@
                 @change="handleRecommendStatusChange(scope.$index, scope.row)"
                 :active-value="1"
                 :inactive-value="0"
-                v-model="scope.row.recommandStatus">
+                v-model="scope.row.recommandStatus"
+                >
               </el-switch>
             </p>
           </template>
@@ -191,7 +196,7 @@
         </el-option>
       </el-select>
       <el-button
-        style="margin-left: 20px"
+        style="margin-left: 20px;"
         class="search-button"
         @click="handleBatchOperate()"
         type="primary"
@@ -218,7 +223,7 @@
       <span>商品货号：</span>
       <span>{{editSkuInfo.productSn}}</span>
       <el-input placeholder="按sku编号搜索" v-model="editSkuInfo.keyword" size="small" style="width: 50%;margin-left: 20px">
-        <el-button slot="append" icon="el-icon-search" @click="handleSearchEditSku"></el-button>
+        <el-button slot="append"  icon="el-icon-search" @click="handleSearchEditSku"></el-button>
       </el-input>
       <el-table style="width: 100%;margin-top: 20px"
                 :data="editSkuInfo.stockList"
