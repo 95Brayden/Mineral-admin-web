@@ -5,9 +5,10 @@
       :show-timeout="200"
       :default-active="$route.path"
       :collapse="isCollapse"
-      background-color="#304156"
-      text-color="#bfcbd9"
+      background-color="#f8d9ab"
+      text-color="#000000"
       active-text-color="#409EFF"
+      class="rounded-right"
     >
       <sidebar-item :routes="routes"></sidebar-item>
     </el-menu>
@@ -36,3 +37,9 @@ export default {
   }
 }
 </script>
+<style scoped>
+.rounded-right {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+</style>
