@@ -1,5 +1,5 @@
 <template>
-  <el-menu class="navbar" mode="horizontal">
+  <el-menu class="navbar rounded-right" mode="horizontal">
     <hamburger class="hamburger-container" :toggleClick="toggleSideBar" :isActive="sidebar.opened"></hamburger>
     <breadcrumb></breadcrumb>
     <el-dropdown class="avatar-container" trigger="click">
@@ -89,6 +89,10 @@ export default {
       }
     }
   }
+}
+.rounded-right {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 </style>
 
