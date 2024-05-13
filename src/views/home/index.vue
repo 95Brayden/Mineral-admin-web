@@ -4,26 +4,26 @@
       <el-row :gutter="20">
         <el-col :span="6">
           <div class="out-border">
-            <div class="layout-title">学习教程</div>
+            <div class="layout-title">Mineral前台</div>
             <div class="color-main address-content">
-              <a href="https://www.macrozheng.com" target="_blank">mall学习教程</a>
+              <a href="http://47.99.95.4/app/#/" target="_blank">前台链接</a>
             </div>
           </div>
         </el-col>
-        <el-col :span="6">
-          <div class="out-border">
-            <div class="layout-title">视频教程</div>
-            <div class="color-main address-content">
-              <a href="https://www.macrozheng.com/mall/catalog/mall_video.html" target="_blank">mall视频教程（2023）</a>
-            </div>
-          </div>
-        </el-col>
+        
         <el-col :span="6">
           <div class="out-border">
             <div class="layout-title">点Star支持项目</div>
             <div class="color-main address-content">
-              <a href="https://github.com/macrozheng/mall" target="_blank">Minerral云端矿场</a>
+              <a href="https://github.com/95Brayden/Mineral-app-web" target="_blank">Mineral云端矿场</a>
             </div>
+          </div>
+        </el-col>
+        <el-col :span="6">
+          <div class="total-frame">
+            <img :src="img_home_order" class="total-icon">
+            <div class="total-title">在线用户</div>
+            <div class="total-value">2</div>
           </div>
         </el-col>
       </el-row>
@@ -63,9 +63,9 @@
     </div>
     <el-card class="mine-layout">
       <div style="text-align: center">
-        <img width="150px" height="150px" src="static\logo\img\mineral-logo.png">
+        <img width="180px" height="180px" src="static\logo\img\mineral-logo.png">
       </div>
-      <div style="text-align: center">Minerral云端矿场</div>
+      <!-- <div style="text-align: center">Mineral云端矿场</div> -->
     </el-card>
     <div class="un-handle-layout">
       <div class="layout-title">待处理事务</div>
@@ -364,7 +364,7 @@
   }
 
   .total-icon {
-    color: #409EFF;
+    color: #fdc168;
     width: 60px;
     height: 60px;
   }
