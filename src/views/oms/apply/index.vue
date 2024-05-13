@@ -5,14 +5,14 @@
         <i class="el-icon-search"></i>
         <span>筛选搜索</span>
         <el-button
-          style="float:right"
+          style="float:right;background-color: #a5954f !important; color: #ffffff !important;"
           type="primary"
           @click="handleSearchList()"
           size="small">
           查询搜索
         </el-button>
         <el-button
-          style="float:right;margin-right: 15px"
+          style="float:right;margin-right: 15px;"
           @click="handleResetSearch()"
           size="small">
           重置
